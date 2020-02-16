@@ -1,5 +1,5 @@
 # Traffic Signs for training YOLO v3 Detector
-YOLO format of Traffic signs' images for training detector
+YOLO format of Traffic Signs' images for training YOLO detector
 
 ### Related Course
 **Training YOLO v3 for Objects Detection with Custom Data.** *Build your own detector by labelling, training and testing on image, video and in real time with camera.* Available here: [https://www.udemy.com/course/training-yolo-v3-for-objects-detection-with-custom-data/](https://www.udemy.com/course/training-yolo-v3-for-objects-detection-with-custom-data/)
