@@ -9,6 +9,26 @@ Detections on video are shown below. **Trained weights** for detection tasks can
 
 Explore dataset used for training and detection tasks here: [https://www.kaggle.com/valentynsichkar/traffic-signs-dataset-in-yolo-format](https://www.kaggle.com/valentynsichkar/traffic-signs-dataset-in-yolo-format)
 
+Traffic Sins are grouped into four categories:
+
+prohibitory  | danger | mandatory | other
+------------- | ------------- | ------------- | -------------
+speed limit | priority at next intersection | go right | restriction ends
+no overtaking | danger | go left | priority road
+no traffic both ways | bend left | go straight | give way
+no trucks | bend right | go right or straight | stop
+ | bend | go left or straight | no entry
+ | uneven road | keep right |
+ | slippery road | keep left |
+ | road narrows | roundabout |
+ | construction |
+ | traffic signal 
+ | pedestrian crossing |
+ | school crossing |
+ | cycles crossing |
+ | snow |
+ | animals |
+
 <br/>
 
 ### MIT License
