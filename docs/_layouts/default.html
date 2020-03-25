@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
 
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="icon" type="image/x-icon" href="/Traffic-Signs-for-training-YOLO-v3-Detector/images/favicon.ico" />
 
-{% seo %}
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Traffic Signs for training YOLO v3 Detector - Valentyn Sichkar</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="Traffic Signs for training YOLO v3 Detector" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="YOLO format of Traffic signs’ images for training detector" />
+<meta property="og:description" content="YOLO format of Traffic signs’ images for training detector" />
+<link rel="canonical" href="https://sichkar-valentyn.github.io/Traffic-Signs-for-training-YOLO-v3-Detector/" />
+<meta property="og:url" content="https://sichkar-valentyn.github.io/Traffic-Signs-for-training-YOLO-v3-Detector/" />
+<meta property="og:site_name" content="Traffic-Signs-for-training-YOLO-v3-Detector" />
+<script type="application/ld+json">
+{"headline":"Traffic Signs for training YOLO v3 Detector","@type":"WebSite","url":"https://sichkar-valentyn.github.io/Traffic-Signs-for-training-YOLO-v3-Detector/","name":"Traffic-Signs-for-training-YOLO-v3-Detector","description":"YOLO format of Traffic signs’ images for training detector","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
   </head>
 
   <body>
@@ -15,48 +28,164 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          {% if site.github.is_project_page %}
-            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
-          {% endif %}
-
-          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-
-          {% if site.show_downloads %}
-            <section id="downloads">
-              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
-            </section>
-          {% endif %}
+          <a id="forkme_banner" href="https://github.com/sichkar-valentyn/Traffic-Signs-for-training-YOLO-v3-Detector">View on GitHub</a>
+          <h1 id="project_title">Traffic Signs for training YOLO v3 Detector</h1>
+          <h2 id="project_tagline">YOLO format of Traffic signs’ images for training detector</h2>
+          
+          <a href="https://sichkar-valentyn.github.io">by Valentyn Sichkar</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ifmo.academia.edu/ValentynSichkar" target="_blank">Academia.edu</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCHlzRR0y54SLbcHwLzrUcfw" target="_blank">YouTube</a>        
         </header>
     </div>
-
+    
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        {{ content }}
+        <h1 id="traffic-signs-for-training-yolo-v3-detector">Traffic Signs for training YOLO v3 Detector</h1>
+<p>YOLO format of Traffic Signs’ images for training YOLO detector</p>
+
+<h3 id="mortar_board-related-course"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Related Course</h3>
+<p><strong>Training YOLO v3 for Objects Detection with Custom Data.</strong> <em>Build your own detector by labelling, training and testing on image, video and in real time with camera.</em> Join here: <a href="https://www.udemy.com/course/training-yolo-v3-for-objects-detection-with-custom-data/?referralCode=A283956A57327E37DDAD">https://www.udemy.com/course/training-yolo-v3-for-objects-detection-with-custom-data/</a></p>
+
+<p>Detections on video are shown below. <strong>Trained weights</strong> for detection tasks can be found in the course mentioned above.
+<img src="/Traffic-Signs-for-training-YOLO-v3-Detector/images/ts_detections.gif" alt="Detections on Video" title="Detections of Traffic Signs on Video" /></p>
+
+<p>Explore dataset used for training and detection tasks here: <a href="https://www.kaggle.com/valentynsichkar/traffic-signs-dataset-in-yolo-format">https://www.kaggle.com/valentynsichkar/traffic-signs-dataset-in-yolo-format</a></p>
+
+<p>Traffic Sins are grouped into four categories:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>prohibitory</th>
+      <th>danger</th>
+      <th>mandatory</th>
+      <th>other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>speed limit</td>
+      <td>priority at next intersection</td>
+      <td>go right</td>
+      <td>restriction ends</td>
+    </tr>
+    <tr>
+      <td>no overtaking</td>
+      <td>danger</td>
+      <td>go left</td>
+      <td>priority road</td>
+    </tr>
+    <tr>
+      <td>no traffic both ways</td>
+      <td>bend left</td>
+      <td>go straight</td>
+      <td>give way</td>
+    </tr>
+    <tr>
+      <td>no trucks</td>
+      <td>bend right</td>
+      <td>go right or straight</td>
+      <td>stop</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>bend</td>
+      <td>go left or straight</td>
+      <td>no entry</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>uneven road</td>
+      <td>keep right</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>slippery road</td>
+      <td>keep left</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>road narrows</td>
+      <td>roundabout</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>construction</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>traffic signal</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>pedestrian crossing</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>school crossing</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>cycles crossing</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>snow</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>animals</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h3 id="triangular_flag_on_post-concept-map-of-the-course">:triangular_flag_on_post: Concept Map of the Course</h3>
+<p><img src="/Traffic-Signs-for-training-YOLO-v3-Detector/images/ts_detections.gif" alt="Concept Map of the Course" title="Concept Map of the Course" /></p>
+
+<h3 id="point_right-join-the-course">:point_right: Join the Course</h3>
+<p><a href="https://www.udemy.com/course/training-yolo-v3-for-objects-detection-with-custom-data/?referralCode=A283956A57327E37DDAD">https://www.udemy.com/course/training-yolo-v3-for-objects-detection-with-custom-data/</a></p>
+
+<p><br /></p>
+
+<h3 id="mit-license">MIT License</h3>
+<h3 id="copyright-c-2020-valentyn-n-sichkar">Copyright (c) 2020 Valentyn N Sichkar</h3>
+<h3 id="githubcomsichkar-valentyn">github.com/sichkar-valentyn</h3>
+<h3 id="reference-to">Reference to:</h3>
+<p>Valentyn N Sichkar. Traffic Signs for training YOLO v3 Detector // GitHub platform</p>
+
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
+        
+        <p class="copyright">Traffic-Signs-for-training-YOLO-v3-Detector maintained by <a href="https://github.com/sichkar-valentyn">sichkar-valentyn</a></p>
+        
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
-    {% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
+    
   </body>
 </html>
